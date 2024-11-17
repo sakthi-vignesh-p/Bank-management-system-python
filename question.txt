@@ -1,0 +1,15 @@
+                  BANK MANAGEMENT SYSTEM
+
+Login:
+
+Authenticate users by verifying their name and password.
+Once logged in, users should have access to the following operations:
+
+Withdraw Money
+Deposit Money
+Check Balance
+
+Create Account:
+
+Collect the user's name, age, gender, and a secure 4-digit password.
+Generate a unique 10-digit account number for each user.
