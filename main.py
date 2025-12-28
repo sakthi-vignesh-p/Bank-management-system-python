@@ -31,7 +31,7 @@ while(loop): #looping the program
 
           if(currentCustomer==None):    
              print("No Account found")
-             continue #if name is alrady exist return to the next iteration
+             continue #if name is already exist return to the next iteration
           
           password=int(input("Enter password : "))
 
@@ -123,9 +123,10 @@ while(loop): #looping the program
          if(len(passWrd)<4 or len(passWrd)>4):
             print("Password must be in 4 digit : ")
             continue 
-         customers =newCustomer=(name,age,gender,int(passWrd))
-         customersList.append(newCustomer)
-         newCustomer.display_details()
+         customers=customer.customer(name,age,gender,int(passWrd)) #create a new customer object
+         customersList.append(customers)
          line()
          print("Account created succesfully")
-               
+         line()
+         customers.display_details()      
+         line()
